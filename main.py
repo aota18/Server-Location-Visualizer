@@ -6,8 +6,6 @@ import socket
 import ipinfo
 
 
-
-
 access_token="ACCESS_TOKEN"
 handler = ipinfo.getHandler(access_token)
 

@@ -1,4 +1,14 @@
+import { GOOGLE_MAP_APIKEY } from "./config.js";
+
 let map;
+
+// Load Google Map API script with API Key.
+(function (d, script) {
+  script = d.createElement("script");
+  script.type = "text/javascript";
+  script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_APIKEY}&v=beta&callback=initMap`;
+  d.getElementsByTagName("head")[0].appendChild(script);
+})(document);
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
