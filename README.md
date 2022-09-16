@@ -6,7 +6,7 @@ This is a Server Location Visualizer project with python & javascript (Google Ma
 
 You can see the locations of the server that I've visited for a month and its detail in the map.
 
-Try out the quick [Demo]('https://google.com") before the description.
+Try out the quick [Demo](https://server-location-visualizer-gg4nzrntd-aota18.vercel.app/) before the description.
 
 This project is a implementation of this project idea. (https://practicalpython.yasoob.me/chapter9.html#)
 
