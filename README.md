@@ -1,37 +1,29 @@
 # Server-Location-Visualizer
 
-Server Location Visualizer project with python & D3.JS
+![Screenshot](./screenshot.png)
 
-[-] Sourcing the data - export the history from browser (I used chrome extension : https://chrome.google.com/webstore/detail/export-chrome-history/dihloblpkeiddiaojbagoecedbfpifdj/related?hl=en)
+This is a Server Location Visualizer project with python & javascript (Google Map API).
 
-[-] Cleaning the data
+You can see the locations of the server that I've visited for a month and its detail in the map.
 
-    ```
-    https://google.com/abc
-    https://google.com/what..
-    ```
-    [-] because we don't want duplicate server, we have to filter the urls out and only keep the unique URL.
+Try out the quick [Demo]('https://google.com") before the description.
 
-[-] Domain name to IP address
+This project is a implementation of this project idea. (https://practicalpython.yasoob.me/chapter9.html#)
 
-    ```
+---
 
-    $ ping pythonbasics.org
+## Data sourcing
 
-    PING pythonbasics.org (172.67.195.177): 56 data bytes
-    64 bytes from 172.67.195.177: icmp_seq=0 ttl=57 time=5.016 ms
-    ...
+You can export the history of your website you've visited from Chrome browser.(I used this [chrome extension](https://chrome.google.com/webstore/detail/export-chrome-history/dihloblpkeiddiaojbagoecedbfpifdj/related?hl=en) for export).
 
-    ```
+---
 
-    - If you ping 'domain', you can get the address of its domain.
+## API Info
 
-[-] Get IP detail using ipinfo (https://ipinfo.io)
+You can use ipinfo (https://ipinfo.io) for converting domain names to IP detail
 
-    - create account and get token
-    - (option) boost up the speed of getting result using multi-threading
+---
 
-[-] Visualization
+## Visualization
 
-    - Used D3 bubble map library to show the map chart. (https://d3-graph-gallery.com/graph/bubblemap_tooltip.html)
-    - When user mouseup on the bubble, It shows the detail like domain, ip, country, city , lat&lon data.
+I used [Google Map APIs](https://developers.google.com/maps) for the marker and tooltips for this project.
